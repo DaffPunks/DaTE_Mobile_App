@@ -1,0 +1,20 @@
+<!-- Generated template for the MenuComponent component -->
+<!--<div class="header">-->
+  <!--<button (click)="menuOpen = !menuOpen">watafak</button>-->
+  <!--<button (click)="setNewPage()">new page</button>-->
+  <!--<button (click)="popNewPage()">pop page</button>-->
+  <!--<div>asdas</div>-->
+<!--</div>-->
+
+<div class="header">
+  <button (click)="menuOpen = !menuOpen" class="header-open">Open</button>
+
+</div>
+<div *ngIf="menuOpen" [@myAnimation] class="menu">
+  <div class="menu-list">
+    <a href="">asdasd</a>
+    <a href="">asdasd</a>
+    <a href="">asdasd</a>
+    <a href="">asdasd</a>
+  </div>
+</div>
