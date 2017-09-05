@@ -1,0 +1,18 @@
+<date-nav></date-nav>
+<ion-slides #alph slidesPerView="7" centeredSlides="true" (ionSlideDidChange)="slideChanged()" class="cat-alph">
+  <ion-slide *ngFor="let sym of alphabet">
+    <h1>{{sym}}</h1>
+  </ion-slide>
+</ion-slides>
+
+<div class="cat">
+  <ion-slides #main slidesPerView="8" centeredSlides="true" direction="vertical" class="cat-items">
+    <ion-slide *ngFor="let item of data;" (click)="clickTook(item)" >
+      <h2>{{item.title}}</h2>
+    </ion-slide>
+  </ion-slides>
+</div>
+
+
+
+

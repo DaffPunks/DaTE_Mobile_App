@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { App } from 'ionic-angular';
-import { PlacePage } from "../place/place";
+import {App, IonicPage} from 'ionic-angular';
 
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-place',
+  templateUrl: 'place.html',
 })
-export class HomePage {
+export class PlacePage {
+
+  openMap: boolean = false;
 
   constructor(public app: App) {
 

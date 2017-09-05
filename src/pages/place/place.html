@@ -1,0 +1,27 @@
+<date-nav></date-nav>
+<div class="coma" *ngIf="!openMap">
+  <div class="coma-title">
+    <div class="coma-title-underline">
+      <span>V Edizione</span>
+    </div>
+  </div>
+  <div class="coma-days">
+    23 • 24 • 25
+    <div class="coma-date">
+      SETTEMBRE 2017
+    </div>
+  </div>
+  <div class="coma-text">
+    SABATO 23 E DOMENICA 24<br>
+    <span>ORE 10.00-19.00</span><br>
+    <br>
+    LUNEDÌ 25<br>
+    <span>10.00-17.00</span><br>
+    <br>
+    STAZIONE LEOPOLDA, FIRENZE
+  </div>
+  <div class="coma-btn" (click)="openMap = !openMap">
+    Dove siamo
+  </div>
+</div>
+<date-map *ngIf="openMap"></date-map>

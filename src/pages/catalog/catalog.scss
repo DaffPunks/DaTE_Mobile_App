@@ -1,0 +1,53 @@
+page-catalog {
+  font-family: "TSTAR", sans-serif;
+
+  ion-slides {
+    height: 64px;
+  }
+
+  .cat {
+    background: url(../assets/images/chisiamo.png) no-repeat right bottom #FFF;
+    background-size: contain;
+    height: calc(100% - 118px);
+  }
+
+  .cat-alph {
+
+    .swiper-container {
+      background-color: #c12629;
+      color: #da8495;
+      height: 64px;
+    }
+
+    .swiper-slide h1 {
+      transition: 0.2s ease-in;
+      margin: 0;
+      text-transform: uppercase;
+
+      font-weight: 300;
+    }
+
+    .swiper-slide-active h1 {
+      color: white;
+      font-size: 34px;
+
+      font-weight: 700;
+    }
+
+  }
+
+  .cat-items {
+    height: 100%;
+
+    .swiper-slide h2 {
+      transition: 0.2s ease-in;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .swiper-slide-active h2 {
+      font-size: 34px;
+      font-weight: 700;
+    }
+  }
+}

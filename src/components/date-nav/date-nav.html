@@ -1,0 +1,15 @@
+<!-- Generated template for the DateNavComponent component -->
+<div class="nav">
+  <div class="about nav-item" [ngClass]="{'active': isAboutPage}" (click)="openAboutUs()">
+    <div class="nav-item--icon"></div>
+    <div class="nav-item--name">Chi siamo</div>
+  </div>
+  <div class="place nav-item" [ngClass]="{'active': isPlacePage}" (click)="openPlacePage()">
+    <div class="nav-item--icon"></div>
+    <div class="nav-item--name">Come/dove</div>
+  </div>
+  <div class="catalog nav-item" [ngClass]="{'active': isCatalogPage}" (click)="openCatalog()">
+    <div class="nav-item--icon"></div>
+    <div class="nav-item--name">Espositore</div>
+  </div>
+</div>

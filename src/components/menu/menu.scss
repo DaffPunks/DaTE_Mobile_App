@@ -7,10 +7,14 @@ date-menu {
   .header {
     background-color: #000000;
 
-    padding: 4px;
     min-height: 54px;
 
-    &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px;
+
+    &-open {
 
     }
   }
@@ -34,8 +38,13 @@ date-menu {
     flex-direction: column;
     margin-bottom: 54px;
 
-    a {
-      padding: 10px 0;
+    button {
+      color: white;
+      background-color: transparent;
+      padding: 15px 0;
+      font-size: 18px;
+      font-family: "Tstar";
+      font-weight: 700;
     }
   }
 }

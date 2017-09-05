@@ -3,19 +3,19 @@ import {Events, Platform} from 'ionic-angular';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 
-import {TabsPage} from '../pages/tabs/tabs';
 import {AboutPage} from '../pages/about/about';
+import {CatalogPage} from '../pages/catalog/catalog';
+import {HomePage} from '../pages/home/home';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = TabsPage;
+  rootPage: any = HomePage;
 
   constructor(platform: Platform,
               statusBar: StatusBar,
-              splashScreen: SplashScreen,
-              private events: Events) {
+              splashScreen: SplashScreen) {
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -24,14 +24,6 @@ export class MyApp {
       splashScreen.hide();
     });
 
-  }
-
-  onMenuOpen(event) {
-    this.events.publish('sidebar:open');
-  }
-
-  onMenuClose(event) {
-    this.events.publish('sidebar:close');
   }
 
   setPageAbout(){

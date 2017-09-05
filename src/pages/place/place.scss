@@ -1,16 +1,21 @@
-page-about {
+page-place {
   width: 100%;
   height: 100%;
 
-  .chi {
-    overflow-y: scroll;
-
+  .coma {
     background: url(../assets/images/chisiamo.png) no-repeat right bottom #FFF;
     background-size: contain;
     height: calc(100% - 54px);
+
     padding: 20px;
 
     font-family: "FuturaStd", sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    overflow-y: scroll;
 
     &-title {
       font-size: 52px;
@@ -37,11 +42,35 @@ page-about {
       }
     }
 
+    &-days {
+      font-family: "TSTAR", sans-serif;
+      font-size: 52px;
+      color: #c12629;
+      margin-bottom: 20px;
+    }
+
+    &-date {
+      font-size: 42px;
+      color: #000000;
+    }
+
     &-text {
-      color: #242629;
-      font-size: 19px;
-      line-height: 160%;
-      padding-bottom: 40px;
+      font-size: 18px;
+      line-height: 1.3em;
+
+      span {
+        color: #c12629;
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      text-align: center;
+      border: 2px solid #000;
+      padding: 5px 0;
+      border-radius: 5px;
+      font-size: 22px;
+      text-transform: uppercase;
     }
   }
 }

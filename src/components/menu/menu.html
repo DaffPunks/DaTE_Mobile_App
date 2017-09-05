@@ -7,14 +7,18 @@
 <!--</div>-->
 
 <div class="header">
-  <button (click)="menuOpen = !menuOpen" class="header-open">Open</button>
-
+  <img (click)="openHome()" class="header-logo" height="35" src="assets/images/logo.png">
+  <img (click)="menuOpen = true" *ngIf="!menuOpen" class="header-open" height="15" src="assets/images/menu.png">
+  <img (click)="menuOpen = false" *ngIf="menuOpen" class="header-open" height="15" src="assets/images/close.png">
 </div>
+
 <div *ngIf="menuOpen" [@myAnimation] class="menu">
   <div class="menu-list">
-    <a href="">asdasd</a>
-    <a href="">asdasd</a>
-    <a href="">asdasd</a>
-    <a href="">asdasd</a>
+    <button (click)="openAboutUs()">CHI SIAMO</button>
+    <button (click)="openPlacePage()">COME/DOVE</button>
+    <button (click)="openCatalog()">CATALOGO ESPOSITORI</button>
+    <!--<button (click)="openAboutUs()">PROGRAMMA</button>-->
   </div>
 </div>
+
+
